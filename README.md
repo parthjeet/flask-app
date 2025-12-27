@@ -14,7 +14,7 @@ A minimal Flask REST API. Built with Flask-RESTX for automatic Swagger documenta
 uv sync
 
 # Run the development server
-uv run python app.py
+uv run python src/app.py
 ```
 
 The server starts at `http://localhost:5000`.
@@ -63,7 +63,8 @@ curl -X DELETE http://localhost:5000/api/tasks/1
 
 ```
 flask-app/
-├── app.py              # Flask application
+├── src/
+│   └── app.py          # Flask application
 ├── pyproject.toml      # Project configuration
 ├── uv.lock             # Dependency lockfile
 ├── .python-version     # Python version (3.12)

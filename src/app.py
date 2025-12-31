@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_restx import Api, Resource, fields
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def index():
 @app.route("/health")
 def health():
     """Health check endpoint."""
-    return {"status": "status OK!!", "task_count": len(tasks)}
+    return jsonify({"status": "status OK!!", "task_count": len(tasks)}), 200
 
 
 # Initialize Api AFTER registering app routes

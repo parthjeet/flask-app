@@ -24,4 +24,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: parthjeet/flask-app:1.${{github.run_number}}
+          tags: 
+            - parthjeet/flask-app:latest
+            - parthjeet/flask-app:1.${{github.run_number}}

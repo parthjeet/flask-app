@@ -17,7 +17,7 @@ def index():
 @app.route("/health")
 def health():
     """Health check endpoint."""
-    return {"status": "healthy", "task_count": len(tasks)}
+    return {"status": "status OK!!", "task_count": len(tasks)}
 
 
 # Initialize Api AFTER registering app routes

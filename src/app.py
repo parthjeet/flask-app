@@ -11,7 +11,7 @@ tasks = []
 @app.route("/")
 def index():
     """Welcome message."""
-    return {"message": "Welcome to the Flask Task API", "version": "1.0"}
+    return {"message": "Welcome to the Flask Task API!", "version": "1.0"}
 
 
 @app.route("/health")
